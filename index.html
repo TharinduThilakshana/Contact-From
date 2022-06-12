@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
             <input type="email" id="email" placeholder="Your Email" required>
             <input type="text" id="phone" placeholder="Your Phone No." required>
             <textarea id="message" rows="10" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -29,7 +29,7 @@
                 + "<br> phone no: " + document.getElementById("phone")
                 + "<br> Message: " + document.getElementById("message")
             }).then(
-            message => alert("Message Sent Succusfully")
+            message => alert("Message Sent Succusfully, Thanks For Contacting Us")
             );
         }
     </script>
